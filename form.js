@@ -1,4 +1,4 @@
-const scriptURL = "https://script.google.com/macros/s/AKfycbwFLv74JR6tGFi7o6UbOqCVCtKVjA2ffUkQ0TwZmVo4EbTK4sGA99YuqKiW0a75-T8/exec"
+const scriptURL = "https://script.google.com/macros/s/AKfycbwwjnjGJo7RuWO35o2lQ6-YAKoWDJdmGHvYJwCSud1v2x2gpRhXdosxN_URPDHJ_U8/exec"
 const form = document.forms['Form-Pendaftaran'];
 const formEl = document.querySelector(".form");
 const responseSuccess = document.querySelector(".response-success");

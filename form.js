@@ -5,6 +5,14 @@ const responseSuccess = document.querySelector(".response-success");
 const responseFailed = document.querySelector(".response-failed");
 const loadingSpinner = document.querySelector(".loading-spinner");
 
+
+const checkOthers = document.querySelector('.check-others');
+const textOthers = document.querySelector('.text-others');
+checkOthers.addEventListener('click',()=>{
+  textOthers.classList.toggle('sr-only');
+})
+
+
 const onFormSubmitHandle = (ev) => {
   ev.preventDefault();
   loadingSpinner.classList.remove("sr-only");
@@ -12,7 +20,7 @@ const onFormSubmitHandle = (ev) => {
 
   fetch(scriptURL, {
     method: 'POST',
-    body: new FormData(form)
+    body: new FormData(form),
   })
     .then(response => {
       form.reset();

@@ -2625,7 +2625,7 @@ p {
   background-color: #fff;
   padding: 0 30px;
   height: 65px;
-  border: 1px solid #dedede4f;
+  border: 2px solid #505050;
   color: #222;
   font-size: 18px;
 }
@@ -2638,6 +2638,20 @@ p {
 
 .contact-form .main-btn {
   border-radius: 5px;
+}
+
+.business-goals label {
+  display: block;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.business-goals input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.business-goals input[type="checkbox"]:checked + span {
+  font-weight: bold;
 }
 
 /*===========================
@@ -3253,4 +3267,21 @@ p {
 
 .blog-ratting .ratting-list ul li a span {
   float: right;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
 }
